@@ -6,7 +6,6 @@ window.addEventListener("load", function () {
 	video.autoplay = false;
 	video.loop = false;
 	video.load();
-	document.getElementById("volume").innerText = Math.round(video.volume * 100) + "%";
 });
 
 document.getElementById("play").addEventListener("click", function () {
@@ -59,4 +58,3 @@ document.getElementById("vintage").addEventListener("click", function () {
 document.getElementById("orig").addEventListener("click", function () {
 	video.classList.remove("oldSchool");
 });
-
